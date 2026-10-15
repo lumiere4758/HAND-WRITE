@@ -5,8 +5,8 @@ def find_image_center(img):
     m = img / np.sum(np.sum(img))
     dx = np.sum(m,1)
     dy = np.sum(m, 1)
-    cx = int(round(np.sum(dx * np.arrange(len(dx))),0))
-    cy = int(round(np.sum(dy * np.arrange(len(dy))), 0))
+    cx = int(round(np.sum(dx * np.arange(len(dx))),0))
+    cy = int(round(np.sum(dy * np.arange(len(dy))), 0))
     return cx, cy
 def clean_equivalency_dict(d):
     "clean dictioanry"

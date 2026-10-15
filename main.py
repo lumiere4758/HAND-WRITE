@@ -1,7 +1,7 @@
 import tkinter as tk
-from PIL import ImageGrab
+import pyscreenshot as ImageGrab
 import sys
-sys.path.inset(0, sys.path[0])
+sys.path.insert(0, sys.path[0])
 import model
 
 CANVAS_WIDTH = 1200
